@@ -34,8 +34,20 @@ Completar la tabla:
 | bryan vega |bdvegat      |
 
 ## Discusión
+- Se aprendio sobre los tipos de canvas que ofrece processing y sobre como interactuar con ellos.
+- Aplicando las tecnicas de conversion a escala de grises se entiende mejor como funciona el espacio de color RGB.
+- Se realizaron operaciones de convolucion sobre imagenes y videos para obtener las mascaras de convolucion, que ayudan a tener perspectivas diferentoes sobre las imagenes y resaltar pixles con propiedades de interes.
+- Aplicando el metodo para obtener el histograma se entiende mejor como funciona el espacio de color HSB, como se pueden usar PGraphics como capas y se entiende el histograma como una herramienta que permite realizar analisis sobre imagenes.
+- Se hicieron operacion sobre pixeles de imagenes y videos que ayudaron a aprender sobre el funcionamiento de proccesing, como es el flujo para dibujar sobre un frame PGraphics, como se puede manipular una imagen o video  a nivel de pixeles.
 
-(describa brevemente las actividades realizadas y los resultados obtenidos)
+## Referencias
+rgb grayscale https://www.johndcook.com/blog/2009/08/24/algorithms-convert-color-grayscale/
+luma grayscale https://www.researchgate.net/figure/Luma-Grayscale-conversion-pseudo-code_fig2_288824333
+convolution https://en.wikipedia.org/wiki/Convolution
+kernels de convolucion https://www.sciencedirect.com/topics/computer-science/convolution-filter
+codigo de convolucion adaptado de: https://processing.org/examples/convolution.html
+codigo histograma adaptado de: https://processing.org/examples/histogram.html
+
 
 ## Entrega
 
