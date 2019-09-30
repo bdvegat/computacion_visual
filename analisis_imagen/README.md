@@ -41,12 +41,15 @@ Completar la tabla:
 - Se hicieron operacion sobre pixeles de imagenes y videos que ayudaron a aprender sobre el funcionamiento de proccesing, como es el flujo para dibujar sobre un frame PGraphics, como se puede manipular una imagen o video  a nivel de pixeles.
 
 ## Referencias
-rgb grayscale https://www.johndcook.com/blog/2009/08/24/algorithms-convert-color-grayscale/
-luma grayscale https://www.researchgate.net/figure/Luma-Grayscale-conversion-pseudo-code_fig2_288824333
-convolution https://en.wikipedia.org/wiki/Convolution
-kernels de convolucion https://www.sciencedirect.com/topics/computer-science/convolution-filter
-codigo de convolucion adaptado de: https://processing.org/examples/convolution.html
-codigo histograma adaptado de: https://processing.org/examples/histogram.html
+- rgb grayscale https://www.johndcook.com/blog/2009/08/24/algorithms-convert-color-grayscale/
+- luma grayscale https://www.researchgate.net/figure/Luma-Grayscale-conversion-pseudo-code_fig2_288824333
+- convolution https://en.wikipedia.org/wiki/Convolution
+- kernels de convolucion https://www.sciencedirect.com/topics/computer-science/convolution-filter
+- codigo de convolucion adaptado de: https://processing.org/examples/convolution.html
+- codigo histograma adaptado de: https://processing.org/examples/histogram.html
+
+- Imagen tomada de: imagen de https://pixabay.com/photos/red-fox-fox-closeup-close-up-4502730/
+- Video tomado de: https://www.pexels.com/video/time-lapse-video-of-night-sky-857195/
 
 
 ## Entrega
