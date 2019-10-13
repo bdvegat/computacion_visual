@@ -16,7 +16,7 @@ Complete la tabla:
 
 | Integrante | github nick |
 |------------|-------------|
-|            |             |
+|Bryan Vega  | bdvegat     |
 
 ## Discusión
 
@@ -24,7 +24,7 @@ Complete la tabla:
 
 | Ilusión     | Categoria | Referencia | Tipo de interactividad (si aplica) | URL código base (si aplica) |
 |-------------|-----------|------------|------------------------------------|-----------------------------|
-|true squares?|           |            |                                    |                             |
+|true squares?|           |https://www.brainbashers.com/showillusion.asp?15 | haciendo clic se muestran o esconden los circulos para poder ver mejor la forma de los cuadrados|                             |
 |         |           |            |                                    |                             |
 |         |           |            |                                    |                             |
 |         |           |            |                                    |                             |
