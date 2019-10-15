@@ -1,21 +1,37 @@
+import processing.core.*; 
+import processing.data.*; 
+import processing.event.*; 
+import processing.opengl.*; 
+
+import java.util.HashMap; 
+import java.util.ArrayList; 
+import java.io.File; 
+import java.io.BufferedReader; 
+import java.io.PrintWriter; 
+import java.io.InputStream; 
+import java.io.OutputStream; 
+import java.io.IOException; 
+
+public class MunkerWhite extends PApplet {
+
 PGraphics left;
 PGraphics rigth;
 
-void setup(){
-    size (640,480);
+public void setup(){
+    
     left=createGraphics(320,480);
     rigth=createGraphics(320,480);
 }
 boolean show_background=true;
 
-void draw(){
+public void draw(){
     left();
     rigth();
     image(left,0,0);
     image(rigth,320,0);
 }
 
-void left(){
+public void left(){
     if (show_background){
         blueLines(left);
         redCircle(left);
@@ -28,7 +44,7 @@ void left(){
     }
 }
 
-void rigth(){
+public void rigth(){
     if (show_background){
         yellowLines(rigth);
         redCircle(rigth);
@@ -41,7 +57,7 @@ void rigth(){
     }
 }
 
-void blueLines(PGraphics pg){
+public void blueLines(PGraphics pg){
     pushStyle();
     pg.beginDraw();
     int wide = 320;
@@ -60,7 +76,7 @@ void blueLines(PGraphics pg){
     popStyle();
 }
 
-void yellowLines(PGraphics pg){
+public void yellowLines(PGraphics pg){
     pushStyle();
     pg.beginDraw();
     int wide = 320;
@@ -78,7 +94,7 @@ void yellowLines(PGraphics pg){
     popStyle();
 }
 
-void mousePressed(){
+public void mousePressed(){
     if (show_background){
         show_background=false;
     }else{
@@ -86,7 +102,7 @@ void mousePressed(){
     }
 }
 
-void redCircle(PGraphics pg){
+public void redCircle(PGraphics pg){
     pushStyle();
     pg.beginDraw();
     pg.stroke(255,0,0);
@@ -94,4 +110,14 @@ void redCircle(PGraphics pg){
     pg.circle(160,240,200);
     pg.endDraw();
     popStyle();
+}
+  public void settings() {  size (640,480); }
+  static public void main(String[] passedArgs) {
+    String[] appletArgs = new String[] { "MunkerWhite" };
+    if (passedArgs != null) {
+      PApplet.main(concat(appletArgs, passedArgs));
+    } else {
+      PApplet.main(appletArgs);
+    }
+  }
 }
