@@ -101,21 +101,21 @@ public void triangleRaster() {
   noStroke();
   fill(255,255,0,125);
   float aux=width/pow(2,n);    
-  int c = (int) pow(2,n);
-  for (int i=-c;i<c;i++){
-    for (int j=-c;j<c;j++){
-      float area = edgeFunction(v1,v2,v3);
-      Vector p = new Vector(i*aux,j*aux);
+  int c = (int) pow(2,n-1);
+  float area = edgeFunction(v1,v2,v3);
+  for (int i=-c;i<=c;i++){
+    for (int j=-c;j<=c;j++){
+      Vector p = new Vector(j*aux,i*aux);
       float w1 = edgeFunction(v2,v3,p);
       float w2 = edgeFunction(v3,v1,p);
       float w3 = edgeFunction(v1,v2,p);
-      if (w1 >= 0 && w2>=0 && w3>=0) { 
+      if (w1 >= 0 && w2 >= 0 && w3 >= 0) { 
         // barycentric coordinates are the areas of the sub-triangles divided by the area of the main triangle
         square((node.location(p).x()),(node.location(p).y()), 1);
         w1 /= area; 
         w2 /= area; 
         w3 /= area; 
-        fill(255*w1,255*w2,255*w3,130);
+        fill(255*w1,255*w2,255*w3,120);
       }
     }
   }
